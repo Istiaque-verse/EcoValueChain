@@ -1,6 +1,9 @@
 import { Row } from "antd";
 import styled from "styled-components";
 
+const ecoDark = "#155435";
+const bone = "#f5efe6"; // bone background behind the image
+
 export const ContentSection = styled("section")`
   position: relative;
   padding: 10rem 0 8rem;
@@ -28,6 +31,30 @@ export const ContentWrapper = styled("div")`
   }
 `;
 
+// New: wrappers for the main hero image
+export const ImageWrapper = styled("div")`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.75rem 2rem;
+  border-radius: 28px;
+  background: ${bone};
+  box-shadow: 0 18px 36px rgba(21, 84, 53, 0.18);
+`;
+
+export const HeroImage = styled("div")`
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+
+  img,
+  svg {
+    width: 100%;
+    height: auto;
+    border-radius: 22px;
+  }
+`;
+
 export const ServiceWrapper = styled("div")`
   display: flex;
   justify-content: space-between;
@@ -39,7 +66,7 @@ export const MinTitle = styled("h6")`
   line-height: 1rem;
   padding: 0.5rem 0;
   text-transform: uppercase;
-  color: #000;
+  color: ${ecoDark};
   font-family: "Motiva Sans Light", sans-serif;
 `;
 

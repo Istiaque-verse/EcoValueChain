@@ -14,40 +14,39 @@ export const Styles = createGlobalStyle`
         font-style: normal;
     }
 
-
     body,
     html,
     a {
         font-family: 'Motiva Sans Light', sans-serif;
     }
 
-
     body {
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
         border: 0;
         outline: 0;
-        background: #fff;
+        background: #E6DDC4; /* ECO_BONE_LIGHT */
+        color: #123524;       /* ECO_GREEN_DARK as default text */
         overflow-x: hidden;
     }
 
     a:hover {
-        color: #18216d;
+        color: #1E7045;       /* ECO_GREEN */
     }
 
     input,
     textarea {
         border-radius: 4px;
         border: 0;
-        background: rgb(241, 242, 243);
-        transition: all 0.3s ease-in-out;  
+        background: #D3C6A4;  /* ECO_BONE */
+        transition: all 0.3s ease-in-out;
         outline: none;
-        width: 100%;  
+        width: 100%;
         padding: 1rem 1.25rem;
 
         :focus-within {
-            background: none;
-            box-shadow: #2e186a 0px 0px 0px 1px;
+            background: #E6DDC4;  /* lighten on focus */
+            box-shadow: #123524 0px 0px 0px 1px; /* ECO_GREEN_DARK */
         }
     }
 
@@ -58,22 +57,22 @@ export const Styles = createGlobalStyle`
     h5,
     h6 {
         font-family: 'Motiva Sans Bold', serif;
-        color: #18216d;
+        color: #123524;       /* ECO_GREEN_DARK */
         font-size: 56px;
         line-height: 1.18;
 
         @media only screen and (max-width: 890px) {
           font-size: 47px;
         }
-      
+
         @media only screen and (max-width: 414px) {
           font-size: 32px;
         }
     }
 
     p {
-        color: #18216d;
-        font-size: 21px;        
+        color: #123524;       /* ECO_GREEN_DARK */
+        font-size: 21px;
         line-height: 1.41;
     }
 
@@ -84,13 +83,13 @@ export const Styles = createGlobalStyle`
     a {
         text-decoration: none;
         outline: none;
-        color: #2E186A;
+        color: #1E7045;       /* ECO_GREEN */
 
         :hover {
-            color: #2e186a;
+            color: #123524;   /* ECO_GREEN_DARK */
         }
     }
-    
+
     *:focus {
         outline: none;
     }

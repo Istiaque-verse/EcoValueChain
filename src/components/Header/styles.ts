@@ -1,9 +1,15 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { MenuOutlined } from "@ant-design/icons";
+import {
+  ECO_GREEN_DARK,
+  ECO_GREEN,
+  ECO_BONE_LIGHT,
+} from "../../styles/theme";
 
 export const HeaderSection = styled("header")`
   padding: 1rem 0.5rem;
+  background: ${ECO_BONE_LIGHT};
 
   .ant-row-space-between {
     align-items: center;
@@ -12,8 +18,37 @@ export const HeaderSection = styled("header")`
 `;
 
 export const LogoContainer = styled(Link)`
-  display: flex;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.25rem 0;                 /* minimal padding, no pill */
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  transition: transform 0.15s ease-out, color 0.15s ease-out;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-1px);      /* subtle button-like feedback */
+  }
+
+  &:active {
+    transform: translateY(0);         /* pressed state */
+  }
 `;
+
+export const LogoText = styled("span")`
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: ${ECO_GREEN_DARK};
+  text-transform: uppercase;
+`;
+
+
+
 
 export const NavLink = styled("div")`
   display: inline-block;
@@ -41,7 +76,7 @@ export const Burger = styled("div")`
   display: none;
 
   svg {
-    fill: #2e186a;
+    fill: ${ECO_GREEN_DARK};
   }
 `;
 
@@ -55,11 +90,12 @@ export const Menu = styled("h5")`
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
+  color: ${ECO_GREEN_DARK};
 `;
 
 export const CustomNavLinkSmall = styled(NavLink)`
   font-size: 1.2rem;
-  color: #18216d;
+  color: ${ECO_GREEN_DARK};
   transition: color 0.2s ease-in;
   margin: 0.5rem 2rem;
 
@@ -70,7 +106,7 @@ export const CustomNavLinkSmall = styled(NavLink)`
 
 export const Label = styled("span")`
   font-weight: 500;
-  color: #404041;
+  color: ${ECO_GREEN};
   text-align: right;
   display: flex;
   justify-content: space-between;
@@ -79,17 +115,19 @@ export const Label = styled("span")`
 
 export const Outline = styled(MenuOutlined)`
   font-size: 22px;
+  color: ${ECO_GREEN_DARK};
 `;
 
 export const Span = styled("span")`
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  color: ${ECO_GREEN_DARK};
 
   &:hover,
   &:active,
   &:focus {
-    color: rgb(255, 130, 92);
+    color: ${ECO_GREEN};
     text-underline-position: under;
-    text-decoration: rgb(255, 130, 92) wavy underline;
+    text-decoration: ${ECO_GREEN} wavy underline;
   }
 `;

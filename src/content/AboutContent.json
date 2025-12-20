@@ -1,15 +1,15 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Light, fast & regenerative",
+  "text": "EcoValue Chain transforms invasive water hyacinth into sustainable natural fiber, turning an environmental threat into a fast, scalable solution for climate resilience and circular design.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "title": "Why water hyacinth?",
+      "content": "Water hyacinth is one of Bangladesh’s most invasive aquatic plants, clogging rivers, harming biodiversity, and disrupting livelihoods—yet it is also a rich source of natural fiber when processed responsibly.",
       "icon": "notes.svg"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
+      "title": "Why EcoValue Chain?",
+      "content": "By building a low-cost, youth-led fiber extraction process, EcoValue Chain converts this waste into eco-friendly raw materials for handicrafts, packaging, and sustainable products, creating value for both people and planet.",
       "icon": "notes.svg"
     }
   ]
