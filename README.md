@@ -1,8 +1,8 @@
-# EcoValue Chain – Landing Page
+# EcoValue Chain 
 
 EcoValue Chain is a youth-led social enterprise transforming water hyacinth—one of Bangladesh’s most invasive aquatic plants—into sustainable natural fiber for climate‑resilient products and community livelihoods.
 
-This repository contains the marketing/landing website built with React on top of the [Landy React Template][web:184].
+This repository contains the marketing/landing website built with React.
 
 ---
 
