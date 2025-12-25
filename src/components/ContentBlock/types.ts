@@ -1,24 +1,24 @@
-import { TFunction } from "react-i18next";
 export interface ContentBlockProps {
   icon: string;
   title: string;
-  content: string;
+  content:
+    | string
+    | {
+        title: string;
+        text?: string;
+        unitPrice: string;
+        unitLabel: string;
+        currentStock: number;
+        totalSold: number;
+        image?: string;
+      };
   section?: {
     title: string;
     content: string;
     icon: string;
   }[];
-  button?: (
-    | {
-        title: string;
-        color?: undefined;
-      }
-    | {
-        title: string;
-        color: string;
-      }
-  )[];
-  t: TFunction;
+  button?: { title: string; color?: string }[] | string;
   id: string;
   direction: "left" | "right";
+  t: any;
 }

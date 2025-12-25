@@ -17,14 +17,14 @@ const Home = () => {
     <Container>
       <ScrollToTop />
 
-     <ContentBlock
-  direction="right"
-  title={IntroContent.title}
-  content={IntroContent.text}
-  button={IntroContent.button}
-  icon="EcoValueChain_logo-Photoroom.png"
-  id="intro"
-/>
+      <ContentBlock
+        direction="right"
+        title={IntroContent.title}
+        content={IntroContent.text}
+        button={IntroContent.button}
+        icon="EcoValueChain_logo-Photoroom.png"
+        id="intro"
+      />
 
       <MiddleBlock
         title={MiddleBlockContent.title}
@@ -37,7 +37,7 @@ const Home = () => {
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="graphs.svg"
+        icon="Abouteco.jpeg"
         id="about"
       />
 
@@ -49,11 +49,12 @@ const Home = () => {
         id="mission"
       />
 
+      {/* Product section with Product.jpeg and metrics card */}
       <ContentBlock
         direction="left"
         title={ProductContent.title}
-        content={ProductContent.text}
-        icon="waving.svg"
+        content={ProductContent}
+        icon="Product.jpeg"
         id="product"
       />
 
