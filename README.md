@@ -1,112 +1,66 @@
-![landy](https://user-images.githubusercontent.com/48876996/121569479-e179db80-ca31-11eb-8a48-9c3de9b142f3.gif)
+# EcoValue Chain – Landing Page
 
-![Landy React Template License](https://img.shields.io/github/license/Adrinlol/landy-react-template)
-![Landy React Template Release Date](https://img.shields.io/github/release-date/Adrinlol/landy-react-template)
-![Landy React TemplateStars](https://img.shields.io/github/stars/Adrinlol/landy-react-template)
-![Landy React Template Language](https://img.shields.io/github/languages/top/Adrinlol/landy-react-template)
-![Landy React Template TypeScript](https://badgen.net/npm/types/tslib)
+EcoValue Chain is a youth-led social enterprise transforming water hyacinth—one of Bangladesh’s most invasive aquatic plants—into sustainable natural fiber for climate‑resilient products and community livelihoods.
 
-## Free React landing page template
+This repository contains the marketing/landing website built with React on top of the [Landy React Template][web:184].
 
-[Landy][Landy] is an open-source React landing page template written in TypeScript, designed for developers and startups, who want to create a quick and professional landing page for their business or project.
+---
 
-This React template comes with multi-lingual support, smooth animations, set of ready to use sections and most importantly, all of the content is stored in the JSON files, so that you can manage the texts without having any prior knowledge in React.js.
+## ✨ Features
 
-## Table of contents
+- **Mission storytelling**  
+  Clearly explains EcoValue Chain’s vision, problem statement, and “Pollution to Purpose” solution using structured content blocks.
 
-- [Features](#features)
-- [Google Lighthouse](#google-lighthouse)
-  - [Performance](#performance)
-  - [Accessibility](#accessibility)
-  - [Best Practices](#best-practices)
-  - [SEO](#seo)
-- [Demo](#demo)
-- [Installation](#installation)
-- [Special Thanks](#special-thanks)
-- [Usage](#usage)
-- [License](#license)
+- **Product metrics card**  
+  A dedicated product section for *Water Hyacinth Fiber Sheets* that shows:
+  - Unit price  
+  - Current stock  
+  - Total sold  
 
-## Features
+- **Eco branding & theming**  
+  - Custom EcoValue Chain logo and favicon (`ecovaluechain-logo.svg`).  
+  - Phthalo green and bone palette for a calm, nature‑inspired UI.
 
-Your project will have everything you need to build a modern single-page React app:
+- **Contact & mail integration**  
+  Contact form that opens the user’s mail client pre‑filled with name, email, and message for quick outreach.
 
-- 🎁 **Modern** – Template created using the latest features of React (State management using Hooks, Code-Splitting to reduce the bundle size)
+- **Social link**  
+  Intro section includes a Facebook icon linking to the official EcoValue Chain share page.
 
-- 💻 **Responsive** – Highly responsive and reusable UI components, that change depending on the provided props
+---
 
-- 🚀 **Fast** – Buttery smooth experience thanks to the implementation of best practices and no third party dependencies, resulting in <b>PERFECT</b> Google Lighthouse scores
+## 🧱 Tech Stack
 
-- 🏷 **TypeScript support** – Landy is written in TypeScript to improve the DX
+- **React** (CRA)  
+- **TypeScript**  
+- **Ant Design** for grid/layout (`Row`, `Col`, `Drawer`)  
+- **styled-components** for styling  
+- **react-awesome-reveal** for subtle animations  
+- **react-i18next** for text translation support
 
-- 🌍 **Internationalization** - Prebuilt standalone file that works in every environment and doesn't require reloading the page to translate the content
+---
 
-- 🛸 **Routing** - Each file inside the src/pages directory will generate its own route, so you don't have to manually handle the routing
+## 📂 Project Structure (high level)
 
-- 🤙 **Contact Form** - Contact form written in React Hooks, with uncontrolled form validation to reduce unnecessary performance penalty. You just need to provide the endpoint
+- `public/`
+  - `ecovaluechain-logo.svg` – site favicon and primary logo  
+  - `img/svg/` – hero/section images, product image, social icons (e.g. `Product.jpeg`, `facebook-svgrepo-com.svg`, `Abouteco.jpeg`)
 
-- ⚙️ **Maintenance** - All of the content is stored in the JSON files, so that you can easily manage the content of the website
+- `src/content/`
+  - `IntroContent.json` – hero section text and buttons  
+  - `MiddleBlockContent.json` – “Pollution to Purpose” block  
+  - `AboutContent.json`, `MissionContent.json`, `ProductContent.json`, `ContactContent.json` – main sections  
+  - `SolutionProduct.ts` – data for the product metrics card
 
-## Google Lighthouse
+- `src/components/`
+  - `Header/` – top navigation with EcoValue Chain logo and anchors  
+  - `ContentBlock/` – reusable section layout (image + text + CTA / services / product card)  
+  - `MiddleBlock/` – centered text block used for the solution/problem narrative  
+  - `ContactForm/` – contact section with validation and mailto integration  
+  - `common/` – shared `Button`, `Input`, `TextArea`, `SvgIcon`, and layout helpers
 
-![1](https://user-images.githubusercontent.com/48876996/121569366-c313e000-ca31-11eb-940c-187f556ff0d6.png)
+- `src/pages/Home/`
+  - `index.tsx` – assembles all sections into the single‑page layout (Intro, About, Mission, Product, Contact)
 
-[Google Lighthouse][Google Lighthouse] is an open-source, automated tool for measuring the quality of web pages. Google Lighthouse audits performance, accessibility and search engine optimization of web pages.
+---
 
-### Performance
-
-Audits for metrics like first paint and time to interactive to determine lag.
-
-### Accessibility
-
-Checks for common issues that may prevent users from accessing your content.
-
-### Best Practices
-
-Looks for everything from HTTPS usage to correct image aspect ratios.
-
-### SEO 
-
-Checks for best practices to ensure your site is discoverable.
-
-
-## Demo
-
-Check the live demo here 👉️ https://landy-web.netlify.app/
-
-
-### Installation
-
-You’ll need to have Node 10.16.0 or later version on your local development machine (but it’s not required on the server). I recommend using the latest LTS version.
-
-To create a new app, you have to:
-
-Begin by cloning this repository to establish your own local copy. This process is straightforward and ensures you have all the necessary files and resources at your fingertips. You can find step-by-step instructions in this helpful article: Cloning a [repository on GitHub.com](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository).
-
-## What's included
-
-- [antd][antd] - React UI library that contains a set of high quality components.
-- [react-awesome-reveal][react-awesome-reveal] - High performance library that adds reveal animations using the Intersection Observer API.
-- [styled-componets][styled-componets] - Variant on “CSS-in-JS”—which solves many of the problems with traditional CSS.
-- [i18next][i18next] - Internationalization-framework written in and for JavaScript.
-
-## Special thanks
-
-[whoooa][whoooa] - Use fantastic, handmade illustrations with easily changeable colors and different styles.
-
-## Usage
-
-Use it for whatever you want, and be sure to reach out to me on [Twitter](https://twitter.com/Adrinlolx) if you have any questions, or build something cool with it.
-
-## License
-
-Licensed under the MIT license.
-
-<!-- prettier-ignore-start -->
-[antd]: https://github.com/ant-design/ant-design
-[react-awesome-reveal]: https://www.npmjs.com/package/react-awesome-reveal
-[styled-componets]: https://github.com/styled-components/styled-components
-[i18next]: https://github.com/i18next/i18next
-[whoooa]: https://www.whoooa.rocks/
-[Landy]: https://www.npmjs.com/package/cra-template-adrinlol
-[Google Lighthouse]: https://developers.google.com/web/tools/lighthouse
-<!-- prettier-ignore-end -->
